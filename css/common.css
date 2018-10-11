@@ -1,0 +1,73 @@
+body,html{ padding:0; margin:0 auto; background-color:#fff;}
+img{ border:none;}
+h1,h2,h3,h4,h5,h6,hr,blockquote,form,ul,ol,li,p,pre,dl,dt,dd,fieldset,legend,button,input,textarea,th,td{ padding:0; margin:0;}
+ul,ol,li{ list-style:none;}
+sup{ vertical-align:text-top;}
+sub{ vertical-align:text-bottom;}
+legend { color:#000;}
+fieldset{ border:0;} 
+button,input,select,textarea { font-size:100%;}
+table{ border-collapse:collapse; border-spacing:0;}
+.clear{ clear:both; line-height:0px; font-size:0px;}
+.clearfix:after{ content:".";display:block; height:0; clear:both; visibility:hidden;}
+.clearfix{display:inline-block;overflow:hidden;}
+.left{ float:left; _display:inline;}
+.right{ float:right;}
+.hr_10{ clear:both; height:10px; overflow:hidden; font-size:1px; line-height:1px;}
+
+body,button,input,select,textarea{ font-family:"Microsoft Yahei"!important; color:#000; font-size:12px;}
+h1,h2,h3,h4,h5,h6{ font-size:100%;}
+address,cite,dfn,em,var{ font-style:normal }
+code,kbd,pre,samp{ font-family:courier new, courier, monospace;}
+.bold{ font-weight:bold;}
+a{ color:#000; text-decoration:none;}
+a:hover{ color:#CC0000;}
+
+
+.bottom-con{
+    /* background: green; */
+    height: 129px;
+    text-align: center;
+}
+.bottom-con p{
+    padding-top: 22px;
+    color: #999999;
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.bottom-con .subFooter a{
+    display: inline-block;
+    height: 45px;
+    background: url(../images/login_spritesbg.png) no-repeat;
+}
+.bottom-con .subFooter a:nth-of-type(1){
+    position: relative;
+    margin-right: 21px;
+    left: 0;
+    top:5px;
+    width: 112px;
+    background-position: 0 -401px;
+}
+.bottom-con .subFooter a:nth-of-type(3){
+    position: relative;
+    left: 0;
+    margin-right: 21px;
+    top:3px;
+    width: 96px;
+    background-position: 0 -494px;
+}
+.bottom-con .subFooter a:nth-of-type(4){
+    position: relative;
+    left: 0;
+    top:3px;
+    width: 101px;
+    background-position: -97px -494px;
+}
+.bottom-con .subFooter a:nth-of-type(2){
+    /* display: inline-block; */
+    width: 156px;
+    margin-right: 21px;
+    height: 45px;
+    background-position: 0 -448px;
+}
