@@ -23,6 +23,113 @@ code,kbd,pre,samp{ font-family:courier new, courier, monospace;}
 a{ color:#000; text-decoration:none;}
 a:hover{ color:#CC0000;}
 
+.service {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 0 40px;
+    // background: pink;
+    height: 284px;
+    margin-bottom: 25px;
+    border: 1px solid #e0e0e1;
+  }
+.customerfooter {
+    width: 1118px;
+    height: 138px;
+    margin: 33px 0 23px;
+  }
+  .customerfooter ul li {
+    float: left;
+  }
+  .customerfooter ul li:first-child {
+    width: 371px;
+    height: 138px;
+    border-right: 1px solid #e0e0e1;
+  }
+  .customerfooter ul li:nth-child(2) {
+    height: 138px;
+    border-right: 1px solid #e0e0e1;
+  }
+  .customerfooter ul li:nth-child(2) p {
+    width: 370px;
+    text-align: center;
+  }
+  .customerfooter ul li:nth-child(3) img {
+    width: 104px;
+    height: 104px;
+    margin: 0 133px 10px;
+  }
+  .customerfooter ul li:nth-child(3) p:nth-child(2) {
+    width: 370px;
+    height: 25px;
+    text-align: center;
+  }
+  .customerfooter ul li:nth-child(3) p:nth-child(2) em {
+    color: #a10000;
+  }
+  .onlineCustomer {
+    text-align: center;
+    width: 370px;
+    height: 42px;
+    margin: 15px 0 30px;
+  }
+  .onlineCustomer img {
+    width: 42px;
+    height: 42px;
+  }
+  .onlineTime {
+    width: 156px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 107px;
+    background: #a10000;
+    color: #fff;
+  }
+  .customerfooter ul li:nth-child(2) p:nth-child(2),
+  .customerfooter ul li:nth-child(2) p:nth-child(3) {
+    height: 25px;
+    line-height: 25px;
+    color: #727171;
+  }
+  .seven {
+    height: 38px;
+    margin: 20px 0;
+  }
+  .seven img {
+    width: 38px;
+    height: 38px;
+  }
+  .otherfooter {
+    background: #f8f8f8;
+    padding: 17px 0 14px;
+    height: 26px;
+  }
+  .otherfooter ul {
+    width: 1118px;
+    height: 26px;
+  }
+  .otherfooter ul li {
+    float: left;
+    width: 178px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #323232;
+    border-right: 1px solid #dadadb;
+  }
+  .otherfooter ul li a {
+    color: #000;
+  }
+  .otherfooter ul .none {
+    border-right: none;
+  }
+  /* 
+    ============================= */
+  .bottom {
+    height: 160px;
+  }
+
+
 
 .bottom-con{
     /* background: green; */

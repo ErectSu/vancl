@@ -1,0 +1,318 @@
+#top,
+#search,
+#nav,
+#bottom,
+#service {
+  width: 100%;
+}
+#top {
+  height: 32px;
+  border-bottom: 1px solid #ccc;
+}
+#search {
+  height: 64px;
+  padding-top: 28px;
+}
+#nav {
+  height: 77px;
+}
+#service {
+  height: 309px;
+}
+#bottom {
+  height: 160px;
+  border-top: 1px solid black;
+}
+.top,
+.search,
+.nav,
+.bottom {
+  margin: 0 auto;
+  width: 1200px;
+}
+.service {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 284px;
+  margin-bottom: 25px;
+  border: 1px solid #e0e0e1;
+}
+.top {
+  font-size: 12px;
+  color: #808080;
+  height: 32px;
+  line-height: 32px;
+}
+.top a {
+  color: #808080;
+}
+.top a:hover {
+  color: #808080;
+}
+.topRight {
+  margin-left: -16px;
+  width: 123px;
+}
+.topRight .active {
+  width: 72px;
+  margin-right: 10px;
+}
+.topRight .active a {
+  padding-left: 25px;
+  display: block;
+  width: 72px;
+  height: 32px;
+  line-height: 32px;
+  background: url('../images/payatt_03.png') no-repeat left 9px;
+}
+.topRight .active a:hover {
+  color: #b71c22;
+}
+.headRight,
+.topRight {
+  float: left;
+}
+.headRight {
+  margin-left: 789px;
+  width: 303px;
+}
+.headRight .welcome {
+  float: left;
+  width: 228px;
+  margin-right: 7px;
+}
+.headRight .welcome .greet {
+  width: 120px;
+}
+.headRight .welcome > span:nth-of-type(1) {
+  margin-right: 3px;
+}
+.headRight .welcome > span:nth-of-type(2) {
+  width: 65px;
+}
+.headRight .recommend {
+  float: left;
+}
+.topRight .active,
+.topRight .payattention {
+  float: left;
+}
+.payattention {
+  width: 40px;
+}
+.payattention > a {
+  position: relative;
+  display: block;
+  float: left;
+  width: 18px;
+  height: 32px;
+  line-height: 32px;
+}
+.payattention > a:hover span {
+  display: block;
+  z-index: 900;
+}
+.payattention > a:nth-child(1) {
+  margin-right: 2px;
+}
+.payattention > a > span {
+  display: none;
+  position: absolute;
+  left: -111px;
+  top: 33px;
+  width: 147px;
+  height: 168px;
+  background: url(../images/weixin.png) no-repeat;
+}
+.search {
+  margin-bottom: 7px;
+  height: 54px;
+}
+.search .searchTab {
+  margin-left: 762px;
+  position: relative;
+}
+.search .searchTab .search1 > input {
+  height: 27px;
+  font-size: 14px;
+  float: left;
+}
+.search .searchTab .search1 > input:nth-child(1) {
+  color: #000;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  width: 254px;
+  outline: none;
+  border-right: none;
+}
+.search .searchTab .search1 > input:nth-child(2) {
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background: #ba1a22;
+  color: #fff;
+  width: 49px;
+  height: 29px;
+  outline: none;
+}
+.search .searchTab .active {
+  width: 105px;
+  margin-left: 17px;
+  float: right;
+}
+.search .searchTab .active .shopCar {
+  display: none;
+  background: #fff;
+  border: 1px solid #b81b22;
+  width: 325px;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: 28px;
+}
+.search .searchTab .active .shopCar h2 {
+  height: 25px;
+  line-height: 25px;
+  padding-left: 5px;
+}
+.search .searchTab .active p a {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  display: block;
+  border: 1px solid #b71c22;
+  width: 103px;
+  height: 27px;
+  line-height: 27px;
+  background: #b81b22;
+}
+.search .searchTab .active p a i {
+  padding-right: 3px;
+  font-size: 18px;
+  color: #fff;
+  height: 27px;
+  line-height: 27px;
+}
+.search .searchTab .active:hover .shopCar {
+  display: block;
+}
+.search .searchTab .active:hover a {
+  border-bottom-color: #fff;
+  color: #b71c22;
+  background: #fff;
+}
+.search .searchTab .active:hover i {
+  color: #b71c22;
+}
+.search .hotWord {
+  margin-top: 8px;
+  color: #727171;
+  margin-left: 774px;
+  font-size: 12px;
+}
+.search .searchTab,
+.search .hotWord {
+  float: right;
+}
+.search .searchTab .search1,
+.search .searchTab .active {
+  float: left;
+}
+.hotWord p a {
+  color: #727171;
+  margin-right: 7px;
+}
+.hotWord p a:first-of-type {
+  margin-left: 2px;
+}
+.hotWord p a:last-of-type {
+  margin-right: 22px;
+}
+/* 
+  ============================= */
+.nav {
+  margin-bottom: 33px;
+  height: 44px;
+}
+.nav li .logo {
+  display: block;
+  width: 185px;
+  height: 46px;
+  background: url(../images/logo18546.png) no-repeat;
+}
+.nav > li {
+  position: relative;
+  float: left;
+}
+.nav > li:nth-child(2) {
+  width: 99px;
+}
+.nav > li:nth-child(3) {
+  position: relative;
+}
+.nav > li:nth-child(3) em {
+  position: absolute;
+  top: 17px;
+  width: 25px;
+  height: 13px;
+  background: url(../images/icon_hot.png);
+}
+.nav > li:nth-child(1) {
+  margin-right: 15px;
+}
+.nav > li:hover .subNav {
+  display: block;
+  z-index: 300;
+}
+.nav > li:hover .subNav a:hover {
+  color: #b71c22;
+}
+.nav > .list > a {
+  text-align: center;
+  font-size: 16px;
+  color: #727171;
+  margin-top: 22px;
+  display: block;
+  width: 98px;
+  border-right: 1px solid #888;
+}
+.nav > .list > a:hover {
+  color: #b71c22;
+}
+.nav > .list:last-of-type > a {
+  border-right: none;
+}
+.nav div > span {
+  display: block;
+  background: #b71c22;
+  width: 99px;
+  height: 5px;
+}
+.nav .touchList {
+  background: #fff;
+  padding-top: 15px;
+  padding-bottom: 2px;
+  width: 99px;
+  text-align: center;
+}
+.nav .touchList li {
+  font-size: 16px;
+  height: 35px;
+  line-height: 35px;
+}
+.nav .touchList li a {
+  color: #7d7978;
+}
+.nav .touchList li:last-of-type {
+  margin-bottom: 10px;
+}
+.nav .subNav {
+  padding-top: 11px;
+  display: none;
+  position: absolute;
+  left: -1px;
+  top: 41px;
+}
