@@ -18,6 +18,7 @@ window.onload = function () {
 
 
   $(".arrow_l").click(function () {
+    console.log(1)
     index--;
     if (index < 0) {
       index = 7;
@@ -101,3 +102,27 @@ $('.backTop').click(function() {
       document.documentElement.scrollTop = top;
   }, 10)
 });
+//此部分功能：登录或者注册成功后，改变眉头用户名；
+var _cookie=new OprationCookie();//调用构造函数，通过login.php里输入正确时的返回值，以及login.js里面登录成功时，保存的cookie值；
+var str=_cookie.getCookie("user-name");//获取保存的cookie值
+var $span=document.querySelector('.greet');//插入到主页眉头的span标签内；
+var $spanNext=$span.nextElementSibling;
+var $headRight=document.querySelector('.headRight');
+var $topRight=document.querySelector('.topRight');
+console.log($spanNext);
+if(str){
+  $span.innerHTML=str;
+  $span.style.width='78px';
+  $headRight.style.width='321px';
+  $headRight.style.marginLeft='752px';
+  $topRight.style.marginLeft='2px';
+  $spanNext.innerHTML='<a href="vancl.html" style="color:red;" class="exit">退出登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="login.html" style="color:red;">更换用户</a>';
+  $spanNext.style.color='red';
+
+  // $span.innerHTML="欢迎"+str+"光临凡客诚品！";
+};//优化：如果没有登录即str不存在，眉头不变；
+var $exit=document.querySelector('.exit');
+if($exit){
+  var str=_cookie.clearCookie("user-name");
+  // location.href='vancl.html';
+}

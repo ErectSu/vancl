@@ -89,7 +89,7 @@ var login = (function(){
                         _this.loginSuccess(data);
                     }
                 }
-                sendAjax('http://localhost:7010/vancl/php/login.php', params);
+                sendAjax('php/login.php', params);
             }
         },
         loginSuccess: function(data) {
@@ -99,7 +99,8 @@ var login = (function(){
                 // 每次发送请求时,都携带这个token值,后台才能确定当前用户登录成功,才会返回数据
                 document.cookie = "token=" + data.data.token;
                 document.cookie = "user-id=" + data.data.id;
-                location.href = 'http://localhost:7010/vancl/vancl.html';
+                document.cookie = "user-name=" + data.data.username;//让cookie里面多保存一个信息：用户名；以方便主页获取登录的用户名；
+                location.href = 'vancl.html';//从登录页面跳转至主页面
             } else {
                 alert(data.msg);
             }

@@ -15,7 +15,7 @@
     // 如果可以找到,返回关联数组, 找不到返回null
     if($rows) {
       // 输入正确
-      $arr = array("code" => "200", "msg" => "", "data" => array("id" => $rows["id"], "token"=> "1112233"));
+      $arr = array("code" => "200", "msg" => "", "data" => array("id" => $rows["id"], "token"=> "1112233","username"=>$rows["username"]));
 
     } else {
       // 输入错误

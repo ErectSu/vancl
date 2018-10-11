@@ -15,57 +15,44 @@
 }
 #top {
   height: 32px;
-  background: #f7f7f7;
   border-bottom: 1px solid #ccc;
 }
 #search {
   height: 64px;
-  background: cyan;
   padding-top: 28px;
 }
 #nav {
   height: 77px;
-  background: pink;
 }
 #banner {
   height: 535px;
-  background: #efefef;
 }
 #cash {
   padding-top: 40px;
   height: 100px;
-  background: coral;
 }
 #daysec {
   height: 423px;
-  background: darkviolet;
 }
 #pricecut {
-  background: yellow;
   height: 1041px;
 }
 #fallintroduce {
-  background: gray;
   height: 571px;
 }
 #bestchoose {
-  background: pink;
   height: 1165px;
 }
 #pantintroduce {
-  background: orange;
   height: 640px;
 }
 #moreintroduce {
-  background: chocolate;
   height: 718px;
 }
 #service {
-  background: yellow;
   height: 309px;
 }
 #bottom {
-  background: green;
   height: 160px;
   border-top: 1px solid black;
 }
@@ -88,7 +75,6 @@
   width: 1120px;
   margin: 0 auto;
   padding: 0 40px;
-  background: pink;
   height: 284px;
   margin-bottom: 25px;
   border: 1px solid #e0e0e1;
@@ -106,7 +92,7 @@
   color: #808080;
 }
 .topRight {
-  margin-left: 16px;
+  margin-left: -16px;
   width: 123px;
 }
 .topRight .active {
@@ -130,12 +116,15 @@
 }
 .headRight {
   margin-left: 789px;
-  width: 270px;
+  width: 303px;
 }
 .headRight .welcome {
   float: left;
-  width: 215px;
+  width: 228px;
   margin-right: 7px;
+}
+.headRight .welcome .greet {
+  width: 120px;
 }
 .headRight .welcome > span:nth-of-type(1) {
   margin-right: 3px;
@@ -154,17 +143,30 @@
   width: 40px;
 }
 .payattention > a {
+  position: relative;
   display: block;
   float: left;
   width: 18px;
   height: 32px;
   line-height: 32px;
 }
+.payattention > a:hover span {
+  display: block;
+  z-index: 900;
+}
 .payattention > a:nth-child(1) {
   margin-right: 2px;
 }
+.payattention > a > span {
+  display: none;
+  position: absolute;
+  left: -111px;
+  top: 33px;
+  width: 147px;
+  height: 168px;
+  background: url(../images/weixin.png) no-repeat;
+}
 .search {
-  background: pink;
   margin-bottom: 7px;
   height: 54px;
 }
@@ -273,7 +275,6 @@
 /* 
   ============================= */
 .nav {
-  background: green;
   margin-bottom: 33px;
   height: 44px;
 }
@@ -359,7 +360,6 @@
 /* 
   ============================= */
 .banner {
-  background: yellow;
   height: 535px;
   position: relative;
 }
@@ -414,15 +414,16 @@
 /* 
   ============================= */
 .cash {
-  background: orange;
   margin-bottom: 33px;
   height: 80px;
   background: url(../images/618pcqp_02.jpg);
 }
 .daysec {
-  background: khaki;
   margin-bottom: 24px;
   height: 399px;
+}
+.daysec .miaosha {
+  margin-bottom: 10px;
 }
 .daysec .miaosha h2 {
   width: 1200px;
@@ -479,13 +480,11 @@
   width: 218px;
   height: 42px;
   line-height: 21px;
-  background: yellow;
 }
 .miaosha_price {
   position: relative;
   width: 232px;
   height: 40px;
-  background: pink;
 }
 .miaosha_price .new-miaosha-oldprice {
   text-decoration: line-through;
@@ -494,7 +493,6 @@
   display: block;
   width: 232px;
   height: 19px;
-  background: gray;
 }
 .miaosha_price .new-miaosha-saleprice {
   color: #bb2b34;
@@ -502,7 +500,6 @@
   display: block;
   width: 232px;
   height: 21px;
-  background: blueviolet;
 }
 .miaosha_price .new-miaosha-afterdeposit {
   font-size: 14px;
@@ -512,7 +509,6 @@
   bottom: 0;
   width: 98px;
   height: 31px;
-  background: blueviolet;
 }
 .miaosha_price .new-miaosha-afterdeposit em {
   font-size: 18px;
@@ -521,7 +517,6 @@
 /* 
   ============================= */
 .pricecut {
-  background: brown;
   height: 999px;
   margin-bottom: 42px;
 }
@@ -551,7 +546,6 @@
 /* 
   ============================= */
 .fallintroduce {
-  background: gold;
   height: 527px;
   margin-bottom: 44px;
 }
@@ -578,7 +572,6 @@
 /* 
   ============================= */
 .bestchoose {
-  background: greenyellow;
   height: 1149px;
   margin-bottom: 16px;
   padding-top: 30px;
@@ -716,7 +709,6 @@
 /* 
   ============================= */
 .pantintroduce {
-  background: khaki;
   height: 617px;
   margin-bottom: 30px;
   padding-top: 30px;
@@ -760,7 +752,6 @@
 /* 
   ============================= */
 .moreintroduce {
-  background: blue;
   height: 686px;
   margin-bottom: 32px;
   padding-top: 30px;
@@ -875,13 +866,15 @@
   color: #323232;
   border-right: 1px solid #dadadb;
 }
+.otherfooter ul li a {
+  color: #000;
+}
 .otherfooter ul .none {
   border-right: none;
 }
 /* 
   ============================= */
 .bottom {
-  background: cyan;
   height: 160px;
 }
 /* 

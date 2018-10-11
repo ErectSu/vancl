@@ -3,57 +3,57 @@
   }
   #top {
     height: 32px;
-    background: #f7f7f7;
+    // background: #f7f7f7;
     border-bottom: 1px solid #ccc;
   }
   #search {
     height: 64px;
-    background: cyan;
+    // background: cyan;
     padding-top: 28px;
   }
   #nav {
     height: 77px;
-    background: pink;
+    // background: pink;
   }
   #banner {
     height: 535px;
-    background: #efefef;
+    // background: #efefef;
   }
   #cash {
     padding-top: 40px;
     height: 100px;
-    background: coral;
+    // background: coral;
   }
   #daysec {
     height: 423px;
-    background: darkviolet;
+    // background: darkviolet;
   }
   #pricecut {
-    background: yellow;
+    // background: yellow;
     height: 1041px;
   }
   #fallintroduce {
-    background: gray;
+    // background: gray;
     height: 571px;
   }
   #bestchoose {
-    background: pink;
+    // background: pink;
     height: 1165px;
   }
   #pantintroduce {
-    background: orange;
+    // background: orange;
     height: 640px;
   }
   #moreintroduce {
-    background: chocolate;
+    // background: chocolate;
     height: 718px;
   }
   #service {
-    background: yellow;
+    // background: yellow;
     height: 309px;
   }
   #bottom {
-    background: green;
+    // background: green;
     height: 160px;
     border-top: 1px solid black;
   }
@@ -65,7 +65,7 @@
     width: 1120px;
     margin: 0 auto;
     padding: 0 40px;
-    background: pink;
+    // background: pink;
     height: 284px;
     margin-bottom: 25px;
     border: 1px solid #e0e0e1;
@@ -83,7 +83,7 @@
     }
   }
   .topRight {
-    margin-left: 16px;
+    margin-left: -16px;
     width: 123px;
     .active {
       width: 72px;
@@ -106,11 +106,14 @@
   }
   .headRight {
     margin-left: 789px;
-    width: 270px;
+    width: 303px;
     .welcome {
       float: left;
-      width: 215px;
+      width: 228px;
       margin-right: 7px;
+      .greet{
+        width: 120px;
+      }
       & > span {
         &:nth-of-type(1) {
           margin-right: 3px;
@@ -130,6 +133,11 @@
   .payattention {
     width: 40px;
     & > a {
+      &:hover span{
+        display: block;
+        z-index: 900;
+      }
+      position: relative;
       display: block;
       float: left;
       width: 18px;
@@ -139,9 +147,20 @@
         margin-right: 2px;
       }
     }
+    
+    & > a>span{
+      display: none;
+      position: absolute;
+      left: -111px;
+      top:33px;
+      width:147px;
+      height: 168px;
+      background: url(../images/weixin.png) no-repeat;
+    }
+    
   }
   .search {
-    background: pink;
+    // background: pink;
     margin-bottom: 7px;
     height: 54px;
     .searchTab {
@@ -258,7 +277,7 @@
   /* 
   ============================= */
   .nav {
-    background: green;
+    // background: green;
     margin-bottom: 33px;
     height: 44px;
     li {
@@ -356,7 +375,7 @@
   /* 
   ============================= */
   .banner {
-    background: yellow;
+    // background: yellow;
     height: 535px;
     position: relative;
     ul {
@@ -410,16 +429,17 @@
   /* 
   ============================= */
   .cash {
-    background: orange;
+    // background: orange;
     margin-bottom: 33px;
     height: 80px;
     background: url(../images/618pcqp_02.jpg);
   }
   .daysec {
-    background: khaki;
+    // background: khaki;
     margin-bottom: 24px;
     height: 399px;
     .miaosha {
+      margin-bottom: 10px;
       h2 {
         width: 1200px;
         height: 64px;
@@ -484,14 +504,14 @@
       width: 218px;
       height: 42px;
       line-height: 21px;
-      background: yellow;
+      // background: yellow;
     }
   }
   .miaosha_price {
     position: relative;
     width: 232px;
     height: 40px;
-    background: pink;
+    // background: pink;
     .new-miaosha-oldprice {
       text-decoration: line-through;
       font-size: 12px;
@@ -499,7 +519,7 @@
       display: block;
       width: 232px;
       height: 19px;
-      background: gray;
+      // background: gray;
     }
     .new-miaosha-saleprice {
       color: #bb2b34;
@@ -507,7 +527,7 @@
       display: block;
       width: 232px;
       height: 21px;
-      background: blueviolet;
+      // background: blueviolet;
     }
     .new-miaosha-afterdeposit {
       font-size: 14px;
@@ -517,7 +537,7 @@
       bottom: 0;
       width: 98px;
       height: 31px;
-      background: blueviolet;
+      // background: blueviolet;
       em {
         font-size: 18px;
         color: #a10000;
@@ -527,7 +547,7 @@
   /* 
   ============================= */
   .pricecut {
-    background: brown;
+    // background: brown;
     height: 999px;
     margin-bottom: 42px;
     .pricecutTit {
@@ -561,7 +581,7 @@
   /* 
   ============================= */
   .fallintroduce {
-    background: gold;
+    // background: gold;
     height: 527px;
     margin-bottom: 44px;
     table {
@@ -592,7 +612,7 @@
   /* 
   ============================= */
   .bestchoose {
-    background: greenyellow;
+    // background: greenyellow;
     height: 1149px;
     margin-bottom: 16px;
     padding-top: 30px;
@@ -736,7 +756,7 @@
   /* 
   ============================= */
   .pantintroduce {
-    background: khaki;
+    // background: khaki;
     height: 617px;
     margin-bottom: 30px;
     padding-top: 30px;
@@ -780,7 +800,7 @@
   /* 
   ============================= */
   .moreintroduce {
-    background: blue;
+    // background: blue;
     height: 686px;
     margin-bottom: 32px;
     padding-top: 30px;
@@ -905,6 +925,9 @@
         text-align: center;
         color: #323232;
         border-right: 1px solid #dadadb;
+        a{
+          color: #000;
+        }
       }
       .none{
         border-right: none;
@@ -914,7 +937,7 @@
   /* 
   ============================= */
   .bottom {
-    background: cyan;
+    // background: cyan;
     height: 160px;
   }
     /* 

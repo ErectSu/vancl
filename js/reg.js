@@ -11,7 +11,7 @@ var verification = (function () {
     // 获取所有文本框
     var $inpALl = $from.querySelectorAll('input');
     // 表单验证规则
-    // console.log($inpALl)
+    console.log($inpALl,$from);
     var checkInput = {
         loginMimaAgain: function (val) {
             var ele = document.querySelector('.inp3');
@@ -163,7 +163,7 @@ var register = (function(){
                         _this.register(data);
                     }
                 }
-                sendAjax('http://localhost:7010/vancl/php/register.php', params);
+                sendAjax('php/register.php', params);
             },
             // 判断用户名称是否存在
             this.$phone. addEventListener('change', function(){
@@ -175,9 +175,10 @@ var register = (function(){
                     success: function(data) {
                         data = JSON.parse(data);
                         _this.checkUsername(data);
+                        console.log(data);
                     }
                 }
-                sendAjax('http://localhost:7010/vancl/php/check_phone.php', params);
+                sendAjax('php/check_phone.php', params);
             }, false);//不在捕获阶段捕获；
         },
         checkUsername: function(data) {
@@ -193,11 +194,12 @@ var register = (function(){
         register: function(data) {
             // console.log($inpALl[$inpALl.length-2].value);
             if(data.code == 200) {
+                
                 //   注册成功
                 console.log(this.$loginBtn.parentNode.firstElementChild.firstElementChild.checked);
                 if(this.$loginBtn.parentNode.firstElementChild.firstElementChild.checked){
-                    console.log($inpALl[$inpALl.length-2].value);
-                    location.href='http://localhost:7010/vancl/vancl.html?phone=$phone';
+                    // console.log($inpALl[$inpALl.length-2].value);
+                    location.href='vancl.html';
                 }
              } else {
                 

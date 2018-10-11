@@ -25,13 +25,14 @@
     } else {
       _default.data = JSON.stringify(_default.data);
     }
-
+    
     xhr.open(_default["method"], url, _default["async"]);
+    xhr.send(_default["data"]);//此行也可以放到下面方法的后面，最后一行；
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status == 200) {
             var data = xhr.responseText;
             _default["success"] && _default["success"](data);
         }
     };
-    xhr.send(_default["data"]);
+    
 };
