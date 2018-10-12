@@ -16,6 +16,510 @@
 #nav {
   height: 77px;
 }
+.danpinBox {
+  margin: 0 auto;
+  width: 1200px;
+}
+.danpinBox .breadNav {
+  width: 1200px;
+  height: 22px;
+}
+.danpinBox .danpinArea .danpin_colLef {
+  position: relative;
+  width: 634px;
+  height: 426px;
+  float: left;
+}
+.danpinBox .danpinArea .danpin_colLef .showlargerImg {
+  display: none;
+  position: absolute;
+  z-index: 50;
+  left: 558px;
+  width: 401px;
+  height: 401px;
+  overflow: hidden;
+}
+.danpinBox .danpinArea .danpin_colLef .showlargerImg .largerImg {
+  display: none;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #000;
+}
+.danpinBox .danpinArea .danpin_colLef .showlargerImg .largerImg #largerImg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 800px;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinColCenter {
+  float: right;
+  width: 402px;
+  height: 409px;
+  margin: 0 80px;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinColCenter .bigImg {
+  float: right;
+  width: 400px;
+  height: 400px;
+  margin-top: 7px;
+  border: 1px solid #b4b4b4;
+  position: relative;
+  display: inline;
+  overflow: hidden;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinColCenter .bigImg .filter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 220px;
+  height: 220px;
+  background: rgba(239, 242, 247, 0.8);
+}
+.danpinBox .danpinArea .danpin_colLef .danpinColCenter .bigImg .midImg {
+  width: 400px;
+  height: 400px;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinLeft {
+  margin-top: -23px;
+  float: left;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinLeft .smallImg {
+  width: 72px;
+  height: 449px;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinLeft .smallImg #imageMenu {
+  width: 72px;
+  height: 415px;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinLeft .smallImg #imageMenu .track {
+  border: 1px solid #b4b4b4;
+  width: 70px;
+  height: 70px;
+  margin-top: 11px;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinLeft .smallImg #imageMenu .track:hover {
+  border: 1px solid #a10000;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinLeft .smallImg #imageMenu .track .SpriteSmallImgs {
+  display: block;
+  width: 68px;
+  height: 68px;
+  border: 1px solid #fff;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinLeft .smallImg #imageMenu .track .SpriteSmallImgs:hover {
+  border: 1px solid #a10000;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinLeft .smallImg .smallImgUp {
+  width: 72px;
+  height: 5px;
+  margin-top: 13px;
+}
+.danpinBox .danpinArea .danpin_colLef .danpinLeft .smallImg .smallImgDown {
+  width: 72px;
+  height: 5px;
+  margin-top: 11px;
+}
+.danpinBox .danpinArea #danpinRight {
+  width: 561px;
+  height: 374px;
+  margin-top: -6px;
+  float: right;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #promotion {
+  width: 561px;
+  height: 46px;
+  margin-top: 3px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #promotion .danpin_YhTsTab {
+  width: 400px;
+  height: 35px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #promotion .danpin_YhTsTab ul {
+  position: relative;
+  width: 400px;
+  height: 44px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #promotion .danpin_YhTsTab ul li {
+  position: relative;
+  padding-top: 5px;
+  width: 400px;
+  height: 24px;
+  line-height: 24px;
+  padding: 5px 0;
+  border-bottom: 1px solid #a10000;
+  border-top: 1px solid #a10000;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #promotion .danpin_YhTsTab ul li .cut {
+  color: #a10000;
+  font-weight: bold;
+  background: #fff;
+  display: block;
+  position: absolute;
+  width: 49px;
+  height: 14px;
+  top: -14px;
+  left: 167px;
+  padding: 0 8px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea {
+  color: #666666;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .blank20 {
+  display: block;
+  height: 20px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .shoppingNews {
+  width: 349px;
+  height: 33px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .shoppingNews a {
+  color: #fff;
+  display: block;
+  float: left;
+  width: 166px;
+  height: 31px;
+  border: 1px solid #a10000;
+  text-align: center;
+  line-height: 31px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .shoppingNews a#nowbuy {
+  color: #000;
+  background: #f7abaf;
+  margin-right: 13px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .shoppingNews a#addToShoppingCar {
+  background: url(../images/vanclsprite.png) no-repeat -232px -73px;
+  width: 132px;
+  padding-left: 34px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .AreaItotal {
+  width: 400px;
+  height: 22px;
+  padding-bottom: 15px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .AreaItotal .SelectAreaItotal .goodsAddArea {
+  font-weight: bold;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .AreaItotal .SelectAreaItotal .goodsAddArea .danpinColorTitle {
+  display: inline-block;
+  float: left;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .AreaItotal .SelectAreaItotal .goodsAddArea .goodsAdd {
+  display: inline-block;
+  float: left;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .AreaItotal .SelectAreaItotal .goodsAddArea .goodsAdd p {
+  display: inline-block;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .AreaItotal .SelectAreaItotal .goodsAddArea .goodsAdd .NowHasGoods {
+  color: #a10000;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .AreaItotal .SelectAreaItotal .goodsAddArea .goodsAdd span {
+  display: inline-block;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .goodsNum {
+  height: 35px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .goodsNum .danpinColorTitle {
+  float: left;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .goodsNum .danpinnumSelect {
+  float: left;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .goodsNum .danpinnumSelect #selectedAmount {
+  float: left;
+  width: 51px;
+  height: 18px;
+  border: 1px solid #727171;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .goodsNum .danpinnumSelect #comeon {
+  float: left;
+  padding-left: 10px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .selSizeArea {
+  width: 561px;
+  height: 32px;
+  margin: 12px 0 15px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .selSizeArea .danpinColorTitle {
+  float: left;
+  width: 36px;
+  height: 22px;
+  padding-bottom: 10px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .selSizeArea .danpinColorTitle p {
+  display: inline-block;
+  width: 36px;
+  height: 22px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .selSizeArea .selSize {
+  float: left;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .selSizeArea .selSize ul {
+  position: relative;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .selSizeArea .selSize ul .colorHoverok {
+  text-align: center;
+  position: absolute;
+  left: 51px;
+  top: 14px;
+  width: 14px;
+  height: 13px;
+  line-height: 13px;
+  background: url(../images/vanclsprite.png) no-repeat -388px -116px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .selSizeArea .selSize ul #onlickSelSize {
+  text-align: center;
+  border: 1px solid #a10000;
+  width: 62px;
+  height: 24px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .selSizeArea .selSize ul #onlickSelSize p {
+  white-space: nowrap;
+  font-size: 9px;
+  display: block;
+  width: 42px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 16px 0 3px;
+  margin: 1px;
+  margin-bottom: 0;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .danpinColor_Select {
+  height: 50px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .danpinColor_Select .selColor {
+  float: left;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .danpinColor_Select .selColor ul #onlickColor {
+  position: relative;
+  width: 95px;
+  height: 40px;
+  border: 1px solid #a10000;
+  margin: 0 8px 8px 0;
+  background: red;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .danpinColor_Select .selColor ul #onlickColor .colorHoverok {
+  text-align: center;
+  position: absolute;
+  left: 83px;
+  top: 29px;
+  width: 14px;
+  height: 13px;
+  line-height: 13px;
+  background: url(../images/vanclsprite.png) no-repeat -388px -116px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .danpinColor_Select .selColor ul #onlickColor .colorBlock {
+  width: 93px;
+  height: 38px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .danpinColor_Select .selColor ul #onlickColor .colorBlock .track {
+  color: #666;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .danpinColor_Select .selColor ul #onlickColor .colorBlock .track .SpriteColors {
+  background: url(../images/little1.jpg) no-repeat;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: 1px 0 0 1px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .danpinColor_Select .selColor ul #onlickColor .colorBlock .track p {
+  float: right;
+  width: 46px;
+  height: 36px;
+  margin-left: 6px;
+  padding-top: 4px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .danpinColor_Select .danpinColorTitle {
+  float: left;
+  width: 36px;
+  height: 18px;
+  padding-bottom: 10px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent .selectArea .selColorArea .blank10 {
+  display: block;
+  height: 10px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #pricearea {
+  width: 561px;
+  height: 53px;
+  line-height: 53px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #pricearea .blank10 {
+  display: block;
+  height: 10px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #pricearea .cuxiaoPrice {
+  height: 26px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #pricearea .cuxiaoPrice #czwenan {
+  display: block;
+  margin: 7px 0 0 20px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #pricearea .cuxiaoPrice .tehuiMoney {
+  float: left;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #pricearea .cuxiaoPrice .tehuiMoney span {
+  color: #a10000;
+  font-size: 12px;
+}
+.danpinBox .danpinArea #danpinRight .danpinFixedRightContent #pricearea .cuxiaoPrice .tehuiMoney span:last-child strong {
+  font-size: 24px;
+}
+.danpinBox .danpinArea #ProductTitleShow {
+  height: 76px;
+  width: 1200px;
+}
+.danpinBox .danpinArea #ProductTitleShow .bigTitle {
+  height: 45px;
+}
+.danpinBox .danpinArea #ProductTitleShow .bigTitle .blank30 {
+  display: block;
+  width: 1200px;
+  height: 30px;
+}
+.danpinBox .danpinArea #ProductTitleShow .bigTitle #productTitle {
+  line-height: 45px;
+}
+.danpinBox .danpinArea #ProductTitleShow .bigTitle #productTitle h2 {
+  font-size: 18px;
+  color: #333;
+  float: left;
+  width: 550px;
+  height: 45px;
+  padding: 0 10px;
+}
+.danpinBox .danpinArea #ProductTitleShow .bigTitle #productTitle #ItemTag {
+  float: right;
+  width: 220px;
+  height: 45px;
+}
+.danpinBox .danpinArea #ProductTitleShow .bigTitle #productTitle #ItemTag li {
+  color: #808080;
+  text-align: center;
+  font-size: 12px;
+  float: left;
+}
+.danpinBox .danpinArea #ProductTitleShow .bigTitle #productTitle #ItemTag li a {
+  color: #808080;
+  display: inline-block;
+  padding: 0 20px 0 12px;
+  font-size: 14px;
+}
+.blank5 {
+  display: block;
+  height: 5px;
+}
+.blank8 {
+  display: block;
+  height: 8px;
+}
+.blank15 {
+  display: block;
+  height: 15px;
+}
+.blank10 {
+  display: block;
+  height: 10px;
+}
+.blank20 {
+  display: block;
+  height: 20px;
+}
+.blank40 {
+  display: block;
+  height: 40px;
+}
+.sideBarSettabArea {
+  border-top: 1px solid #666;
+  width: 1200px;
+  margin: 0 auto;
+}
+.sideBarSettabArea .area1 {
+  color: #666;
+}
+.sideBarSettabArea .area1 h3:nth-of-type(2) {
+  font-weight: normal;
+}
+.RsetTabCon .productPinglun {
+  width: 1200px;
+  margin: 0 auto;
+}
+.RsetTabCon .productPinglun .hotProduct {
+  width: 190px;
+  height: 1163px;
+  margin-bottom: 50px;
+  border: 1px solid #b4b4b4;
+}
+.RsetTabCon .productPinglun .hotProduct ul {
+  width: 133px;
+  height: 1072px;
+}
+.RsetTabCon .productPinglun .hotProduct ul li {
+  width: 130px;
+  height: 200px;
+  margin-bottom: 18px;
+}
+.RsetTabCon .productPinglun .hotProduct ul li a {
+  line-height: normal;
+  font-weight: 400;
+}
+.RsetTabCon .productPinglun .hotProduct ul li img {
+  width: 160px;
+  position: relative;
+  left: -14px;
+}
+.RsetTabCon .productPinglun .hotProduct ul li h3 {
+  color: #808080;
+  font-weight: normal;
+  display: block;
+  line-height: 20px;
+  text-align: center;
+}
+.RsetTabCon .productPinglun .hotProduct ul li p {
+  text-align: center;
+}
+.RsetTabCon .productPinglun .hotProduct ul li p em {
+  color: #a10000;
+  font-weight: bold;
+}
+.hotTitle {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 25px;
+  border-bottom: 1px solid #b4b4b4;
+}
+.ptPinglunRig {
+  float: right;
+  width: 980px;
+  height: 61px;
+  border: 1px solid #b4b4b4;
+  position: relative;
+}
+.ptPinglunRig .NewCommentOne {
+  margin-right: 32px;
+}
+.ptPinglunRig .NewCommentOne .PingLun {
+  text-align: center;
+}
+.ptPinglunRig .NewCommentOne .PingLun .track {
+  color: #a10000;
+}
+.productQuiz {
+  width: 980px;
+  float: right;
+}
+.productQuiz .area3 {
+  border: 1px solid #b4b4b4;
+}
+.productQuiz .area3 #stylenoquestion {
+  margin: 0 30px;
+}
 #service {
   height: 309px;
 }

@@ -23,6 +23,18 @@ code,kbd,pre,samp{ font-family:courier new, courier, monospace;}
 a{ color:#000; text-decoration:none;}
 a:hover{ color:#CC0000;}
 
+
+.newclear:after{
+	display:block;
+	content:".";
+	height:0;
+	clear:both;
+	overflow:hidden;
+	visibility:hidden;
+}
+.clear{
+  clear: both;
+}
 .service {
     width: 1120px;
     margin: 0 auto;
