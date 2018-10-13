@@ -1,0 +1,40 @@
+[
+ 	{
+ 		"sid":"001",
+ 		"introduce":"ERYAN尔晏 抽象撞色纹中筒袜(男款)2双装",
+ 		"price":"78.00",
+ 		"srcSmall01":"images/small/small01_01.jpg",
+ 		"srcSmall02":"images/small/small01_02.jpg",
+ 		"srcSmall03":"images/small/small01_03.jpg",
+ 		"srcSmall04":"images/small/small01_04.jpg",
+ 		"srcSmall05":"images/small/small01_05.jpg",
+ 		"srcBig01":"images/big/big01_01.jpg",
+ 		"srcBig02":"images/big/big01_02.jpg",
+ 		"srcBig03":"images/big/big01_03.jpg",
+ 		"srcBig04":"images/big/big01_04.jpg",
+ 		"srcBig05":"images/big/big01_05.jpg",
+		"srcChoice01":"images/larger/larger01_01.jpg",
+		"srcChoice02":"images/larger/larger01_02.jpg",
+		"srcChoice03":"images/larger/larger01_03.jpg",
+		"srcChoice04":"images/larger/larger01_04.jpg",
+		"srcChoice05":"images/larger/larger01_05.jpg",
+		"srcColor01":"images/color/color01_01.jpg"
+ 	},
+ 	{
+		"sid":"002",
+		"introduce":"ERY 克尔晏 画风撞色纹中筒袜(男款)1双装",
+		"price":"88.00",
+		"srcSmall01":"images/small/small02_01.jpg",
+		"srcSmall02":"images/small/small02_02.jpg",
+		"srcSmall03":"images/small/small02_03.jpg",
+		"srcSmall04":"images/small/small02_04.jpg",
+		"srcSmall05":"images/small/small02_05.jpg",
+		"srcBig01":"images/big/big02_01.jpg",
+		"srcBig02":"images/big/big02_02.jpg",
+		"srcBig03":"images/big/big02_03.jpg",
+		"srcBig04":"images/big/big02_04.jpg",
+		"srcBig05":"images/big/big02_05.jpg",
+		"srcChoice01":"images/choice/choice02_01.jpg",
+		"srcColor01":"images/color/color02_01.jpg"
+	}
+]
