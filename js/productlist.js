@@ -53,7 +53,7 @@ $shop_box.onclick=function(ev){
         var _cookie=new OprationCookie();
         _cookie.setCookie('hobbyid',numn);
         console.log(document.cookie);
-        location.href = "productdetail.html";
+        location.href = "productdetail.html?id="+numn;
     }
 
 }

@@ -1,14 +1,15 @@
 console.log(localStorage.minelist);
 var str=localStorage.minelist;
-console.log(JSON.parse(str)[0].id);
-var $numm=JSON.parse(str)[0].num;
-console.log($numm);
-var $id=JSON.parse(str)[0].id;
+aaa=JSON.parse(str);
+// console.log(JSON.parse(str)[0].id);
+// var $numm=JSON.parse(str)[0].num;
+// console.log($numm);
+// var $id=JSON.parse(str)[0].id;
 var options = {
     method: "get",
     async: true,
     data: {
-        'sid':$id
+        'sid':'001'
     },
     success: function(data){
         
@@ -28,35 +29,40 @@ var options = {
     //             "src":"images/shop/load02.jpg"
     //         }
     //    ]
-        var str=[];
-        for(var i=0;i<data.length;i++){
-            console.log(data[i].sid);
-            if(data[i].sid == $id){
-                str += `
-                <li id="shopInfo">
-                  <div class="list_item check">
-                    <input class="checkone" type="checkbox" />
-                  </div>
-                  <div class="list_item goods">
-                    <div class="pickture"><img src="${data[i].src}" /></div>
-                    <div class="name">${data[i].introduce}</div>
-                  </div>
-                  <div class="list_item price">￥<span class="priceone">${data[i].price}</span></div>
-                  <div class="list_item number">
-                    <input class="reduce" type="button" value="-" />
-                    <input class="numbox" type="text" value="${$numm}" />
-                    <input class="plus" type="button" value="+" />
-                  </div>
-                  <div class="list_item subtotal"></div>
-                  <div class="sid" style="display:none">${data[i].sid}</div>
-                  <div class="list_item delete">删除</div>
-                </li>
-                `;
-                console.log(str);
-                $('.list').html(str);
-            }
+        var str='';
+        for(var j=0;j<aaa.length;j++){
 
+            for(var i=0;i<data.length;i++){
+                // console.log(data[i].sid);
+                // console.log($id,'$id')
+                if(data[i].sid == aaa[j].id){
+                    str += `
+                    <li id="shopInfo">
+                      <div class="list_item check">
+                        <input class="checkone" type="checkbox" />
+                      </div>
+                      <div class="list_item goods">
+                        <div class="pickture"><img src="${data[i].src}" /></div>
+                        <div class="name">${data[i].introduce}</div>
+                      </div>
+                      <div class="list_item price">￥<span class="priceone">${data[i].price}</span></div>
+                      <div class="list_item number">
+                        <input class="reduce" type="button" value="-" />
+                        <input class="numbox" type="text" value="${aaa[j].num}" />
+                        <input class="plus" type="button" value="+" />
+                      </div>
+                      <div class="list_item subtotal"></div>
+                      <div class="sid" style="display:none">${data[i].sid}</div>
+                      <div class="list_item delete">删除</div>
+                    </li>
+                    `;
+                    console.log(str);
+                    $('.list').html(str);
+                }
+    
+            }
         }
+        
     }
 }
 var url='json/shop.json';

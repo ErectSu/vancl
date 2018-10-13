@@ -333,7 +333,7 @@
                         <h2 title='ERYAN尔晏 抽象撞色纹中筒袜(男款)2双装 38660159 藏青色+暖褐'>
                             ERYAN尔晏 抽象撞色纹中筒袜(男款)2双装 38660159 藏青色+暖褐
                         </h2>
-                        <span attr-id='001' style="display: none;"></span>
+                        <span attr-id='001' style="display: none;" id='attrId'></span>
                         <ul class='ProductSubnav fr' id='ItemTag'>
                             <li>
                                 <a href='javascript:;'>产品描述</a>|
@@ -351,8 +351,8 @@
                     </span>
                 </div>
             </div>
-            <section>
-                <div class="danpin_colLef newclear">
+            <section id='section'>
+                <!-- <div class="danpin_colLef newclear">
                     <div class="danpinLeft">
                         <div class="smallImg">
                             <div class="smallImgUp upper" style='visibility: hidden;'></div>
@@ -547,7 +547,7 @@
                         <div class="blank15">
                         </div>
                     </div>
-                </div> 
+                </div>  -->
             </section>
         </div>
     </div>
@@ -737,7 +737,10 @@
     <script src="js/cookie.js"></script>
     <script src="js/productdetali.js"></script>
     <script>
-        big.init();
+        $(function(){
+            big.init();
+        })
+       
     </script>
 </body>
 
