@@ -126,3 +126,22 @@ if($exit){
   var str=_cookie.clearCookie("user-name");
   // location.href='vancl.html';
 }
+//倒计时
+function toDB(num){
+	return num < 10 ? "0" + num : num;
+}
+var endTime=new Date("2018/10/16 00:00:00");
+var nowTime=new Date();
+var difTime=(endTime.getTime()-nowTime.getTime())/1000;
+var timer=setInterval(function(){
+	difTime--;
+	var hour=parseInt(difTime/3600);
+//	alert(hour)
+	var mintues=parseInt((difTime-hour*3600)/60);
+//	alert(mintues)
+	var seconds=parseInt(difTime-hour*3600-mintues*60);
+//	alert(seconds)
+	$("#seckill_2017_timecounting .em2").html(toDB(hour));
+	$("#seckill_2017_timecounting .em3").html(toDB(mintues));
+	$("#seckill_2017_timecounting .em4").html(toDB(seconds));
+},1000)
