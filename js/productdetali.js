@@ -418,8 +418,8 @@ $(() => {
         // console.log(localStorage);
         localStorage.setItem("minelist", JSON.stringify(minelist))
 
-        var str = localStorage.minelist;
-        console.log(localStorage.minelist);
+        // var str = localStorage.minelist;
+        // console.log(localStorage.minelist);
         // $newnum.innerHTML=JSON.parse(str)[0].num;
 
 
