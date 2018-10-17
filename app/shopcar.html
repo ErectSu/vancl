@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shopcar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- ===============头部================= -->
+    <li style="position: absolute;left: 160px;top:8px;">
+        <a href="index.html" class='logo' style="display: block;
+                width: 185px;
+                height: 46px;
+                background: url(images/logo18546.png) no-repeat;"></a>
+    </li>
+    <div id="top">
+
+    </div>
+    <!-- <div id="search">
+    </div>
+    <div id="nav">
+    </div> -->
+    <!-- ====================== -->
+    <div class="main">
+        <ul class="title">
+            <li>
+                <input id="checkAll" type="checkbox" />
+                <span>全选</span>
+            </li>
+            <li>商品</li>
+            <li>单价</li>
+            <li>数量</li>
+            <li>小计</li>
+            <li>操作</li>
+        </ul>
+        <ul class="list">
+
+
+            <!--<li data-id="11">
+                <div class="list_item check">
+                  <input class="checkone" type="checkbox" />
+                </div>
+                <div class="list_item goods">
+                  <div class="pickture"><img src="images/phone.jpg" /></div>
+                  <div class="name">荣耀10 GT游戏加速 AIS手持夜景 6GB+64GB 幻影蓝全网通 移动联通电信4G 双卡双待</div>
+                </div>
+                <div class="list_item price">￥<span class="priceone">1000.00</span></div>
+                <div class="list_item number">
+                  <input class="reduce" type="button" value="-" />
+                  <input class="numbox" type="text" value="1" />
+                  <input class="plus" type="button" value="+" />
+                </div>
+                <div class="list_item subtotal"></div>
+                <div class="list_item delete">删除</div>
+              </li>-->
+
+
+
+        </ul>
+
+
+
+
+        <!--购物车列表底部-->
+        <ul class="foot">
+            <li id="removes">删除</li>
+            <li> 已选商品
+                <span id="checknum">0</span>件&nbsp;&nbsp;&nbsp;&nbsp; 合计：￥
+                <span id="allPrice">0</span>
+            </li>
+            <li id="payfor">结算</li>
+        </ul>
+    </div>
+    <!-- ===============底部================= -->
+    <!-- <div id="service">
+    </div> -->
+    <div id="bottom">
+    </div>
+    <script>
+
+        // $.get('common.html',function(data){
+        //     console.log(data);
+        //     $('#bottom').html(data);
+        // })
+        $('#top').load('common.html .top');
+        // $('#search').load('common.html .search');
+        // $('#nav').load('common.html .nav');
+        $('#bottom').load('common.html .bottom-con');
+        // $('#service').load('common.html .service');
+    </script>
+    <script src="js/ajax.js"></script>
+    <script src="js/shopcar.js"></script>
+    
+    <!-- <script>
+                big.init();
+            </script> -->
+</body>
+
+</html>
