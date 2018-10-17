@@ -69,7 +69,7 @@ window.onload = function () {
 }
 
 
-console.log($('.BayWindow'));
+// console.log($('.BayWindow'));
 $('.backTop').click(function(){
   
 });
@@ -109,14 +109,14 @@ var $span=document.querySelector('.greet');//插入到主页眉头的span标签�
 var $spanNext=$span.nextElementSibling;
 var $headRight=document.querySelector('.headRight');
 var $topRight=document.querySelector('.topRight');
-console.log($spanNext);
+// console.log($spanNext);
 if(str){
   $span.innerHTML=str;
   $span.style.width='78px';
   $headRight.style.width='321px';
   $headRight.style.marginLeft='752px';
   $topRight.style.marginLeft='2px';
-  $spanNext.innerHTML='<a href="vancl.html" style="color:red;" class="exit">退出登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="login.html" style="color:red;">更换用户</a>';
+  $spanNext.innerHTML='<a href="index.html" style="color:red;" class="exit">退出登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="login.html" style="color:red;">更换用户</a>';
   $spanNext.style.color='red';
 
   // $span.innerHTML="欢迎"+str+"光临凡客诚品！";
@@ -124,13 +124,13 @@ if(str){
 var $exit=document.querySelector('.exit');
 if($exit){
   var str=_cookie.clearCookie("user-name");
-  // location.href='vancl.html';
+  // location.href='index.html';
 }
 //倒计时
 function toDB(num){
 	return num < 10 ? "0" + num : num;
 }
-var endTime=new Date("2018/10/16 00:00:00");
+var endTime=new Date("2018/10/18 11:00:00");
 var nowTime=new Date();
 var difTime=(endTime.getTime()-nowTime.getTime())/1000;
 var timer=setInterval(function(){

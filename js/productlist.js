@@ -6,7 +6,7 @@ var options = {
     success: function(data){
         
         data=JSON.parse(data);
-        console.log(data);//数组对象；
+        // console.log(data);//数组对象；
     //     [
     //         {
     //            "sid":"001",
@@ -33,7 +33,7 @@ var options = {
             <div class="price">￥${data[i].price}</div>
             
         </li>`;
-                console.log(str);
+                // console.log(str);
                 $('.shop_box').html(str);
 
         }

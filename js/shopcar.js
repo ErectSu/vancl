@@ -35,7 +35,7 @@ var options = {
                 // console.log($id,'$id')
                 if (data[i].sid == aaa[j].id) {
                     str += `
-                    <li id="shopInfo">
+                    <li id="shopInfo" attr-id='${data[i].sid}'>
                       <div class="list_item check">
                         <input class="checkone" type="checkbox" />
                       </div>
@@ -68,6 +68,28 @@ var options = {
 var url = 'json/shop.json';
 sendAjax(url, options);
 $(function () {
+    function change(){
+        for(var j=0;j<aaa.length;j++){
+            
+            var bool=true;
+            for(var k=0;k<$('.list li').length;k++){
+                // console.log($('.list li')[k]);
+            // console.log($('.list li')[k].getAttribute('attr-id'));
+                if($('.list li')[k].getAttribute('attr-id')==aaa[j].id){
+                    aaa[j].num=$('.list li')[k].querySelector('.numbox').value;
+                    // console.log(aaa[j].num);
+                    bool=false;
+                }
+            }
+            if(bool==true){
+                aaa.splice(j,1);
+            }
+            // aaa[i].num=aaa[i].id;
+        }
+        localStorage.minelist=JSON.stringify(aaa);
+        // console.log(localStorage.minelist);
+    }
+    
     var $b1 = 0;
     var $c1 = 0;
     var len = $('.priceone').length;
@@ -97,11 +119,22 @@ $(function () {
         var $divpre = $div.previousElementSibling.querySelector('.priceone');
         // $div.nextElementSibling.innerHtml=$numbox.value;
         $divnext = $divpre.innerText * ($numbox.value);
-        console.log($div.nextElementSibling.querySelector('.price').innerText);
+        // console.log($div.nextElementSibling.querySelector('.price').innerText);
         $div.nextElementSibling.querySelector('.price').innerText = $divnext.toString();
         $c1 += Number($divpre.innerText);
         $('#allPrice')[0].innerText = $c1;
-        
+        //
+        var totalnum=0;
+            var totalprice=0;
+        for(var i=0;i<$('.numbox').length;i++){
+            // console.log($('.numbox')[i].value);
+            totalnum+=Number($('.numbox')[i].value);
+            totalprice+=Number($('.numbox')[i].value)*$('.priceone')[i].innerText;
+        }
+        // console.log(totalprice);
+        $('#checknum')[0].innerText = totalnum;
+        $('#allPrice')[0].innerText = totalprice;
+        change();
        
     });
     $('.reduce').click(function () {
@@ -114,16 +147,33 @@ $(function () {
         $b1 -= 1;
         $('#checknum')[0].innerText = $b1;
         $divnext = $divpre.innerText * ($numbox.value);
-        console.log($div.nextElementSibling.querySelector('.price').innerText);
+        // console.log($div.nextElementSibling.querySelector('.price').innerText);
         $div.nextElementSibling.querySelector('.price').innerText = $divnext.toString();
         $c1 -= Number($divpre.innerText);
         $('#allPrice')[0].innerText = $c1;
         if ($numbox.value <= 1) {
+            // console.dir($(this)[0].disabled);
+            $(this)[0].disabled=false;
             $numbox.value = 1;
-            
+            console.log();
+            $(this)[0].parentNode.parentNode.querySelector('.price.only').innerText = parseInt($divpre.innerText);
+            // console.log($('.numbox').length);
+            var totalnum=0;
+            var totalprice=0;
+            for(var i=0;i<$('.numbox').length;i++){
+                // console.log($('.numbox')[i].value);
+                totalnum+=Number($('.numbox')[i].value);
+                totalprice+=Number($('.numbox')[i].value)*$('.priceone')[i].innerText;
+            }
+            // console.log(totalprice);
+            $('#checknum')[0].innerText = totalnum;
+            $('#allPrice')[0].innerText = totalprice;
         }
+        change();
         // $div.nextElementSibling.innerHtml=$numbox.value;
     });
+        
+
     $('.list_item.delete').click(function () {
         $(this)[0].parentNode.remove();
         console.log($(this)[0].parentNode);
@@ -131,7 +181,11 @@ $(function () {
         $('#allPrice')[0].innerText = $c1;
         $b1 -= Number($(this)[0].parentNode.querySelector('.numbox').value);
         $('#checknum')[0].innerText = $b1;
+        change();
     })
     var $checknum = $('.checknum').html;
-    // console.log($checknum);
+    // console.log($('.list li').length);
+    
+    
 });
+

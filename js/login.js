@@ -2,13 +2,13 @@ var verification = (function () {
     // 获取form表单
     var $from = document.querySelector('.form-box');
     // 找form表单的元素, 直接通过form表单点他的name就可以获取
-    console.log($from);
+    // console.log($from);
     // 获取确定按钮
     var $btn = document.querySelector('.btn1');
-    console.log($btn);
+    // console.log($btn);
     // 获取所有文本框
     var $inpALl = $from.querySelectorAll('input');
-    console.log($inpALl);
+    // console.log($inpALl);
     return {
         init: function () {
             this.event();
@@ -70,7 +70,7 @@ var login = (function(){
             this.$loginBtn = this.$ele.querySelector('.btn1');
             this.$usernameInp = this.$ele['username'];
             this.$passwordInp = this.$ele['password'];
-            console.log(this.$loginBtn,this.$usernameInp,this.$passwordInp);
+            // console.log(this.$loginBtn,this.$usernameInp,this.$passwordInp);
             this.event();
         },
         event: function() {
@@ -100,7 +100,7 @@ var login = (function(){
                 document.cookie = "token=" + data.data.token;
                 document.cookie = "user-id=" + data.data.id;
                 document.cookie = "user-name=" + data.data.username;//让cookie里面多保存一个信息：用户名；以方便主页获取登录的用户名；
-                location.href = 'vancl.html';//从登录页面跳转至主页面
+                location.href = 'index.html';//从登录页面跳转至主页面
             } else {
                 alert(data.msg);
             }

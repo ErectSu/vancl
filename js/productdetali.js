@@ -1,9 +1,9 @@
 var $productTitle = document.querySelector('#productTitle h2');
-console.log($productTitle);
-console.log(document.cookie);
+// console.log($productTitle);
+// console.log(document.cookie);
 var _cookie = new OprationCookie();
 var hobbyid = _cookie.getCookie('hobbyid');
-console.log(hobbyid); //001
+// console.log(hobbyid); //001
 var options = {
     method: "get",
     async: true,
@@ -13,7 +13,7 @@ var options = {
     success: function (data) {
 
         data = JSON.parse(data);
-        console.log(data); //数组对象；
+        // console.log(data); //数组对象；
         //     [
         //         {
         //            "sid":"001",
@@ -33,7 +33,7 @@ var options = {
         $attrId.setAttribute('attr-id', hobbyid);
         var str = [];
         for (var i = 0; i < data.length; i++) {
-            console.log(data[i].sid);
+            // console.log(data[i].sid);
             if (data[i].sid == hobbyid) {
                 $productTitle.setAttribute('title',`${data[i].introduce}`);
                 $productTitle.innerHTML=$productTitle.getAttribute('title');
@@ -236,7 +236,7 @@ var options = {
               </div>
           </div>
               `;
-                console.log($('section'));
+                // console.log($('section'));
                 $('section').html(str);
             }
 
@@ -250,24 +250,24 @@ sendAjax(url, options);
 // localStorage.removeItem('minelist');
 var big = (function () {
     var $section = document.querySelector('#section');
-    console.log($section);
+    // console.log($section);
     return {
         init: function () {
             // 获取最大的盒子
             // vat _this=this;
             this.$box = $section.querySelector('.danpin_colLef');
-            console.log(this.$box, '===>');
+            // console.log(this.$box, '===>');
             // 获取展示图片的盒子
             this.$showImage = this.$box.querySelector('.bigImg');
             // 获取放大图片的盒子
             this.$showlargerImage = this.$box.querySelector('.showlargerImg');
-            console.log(this.$showlargerImage);
+            // console.log(this.$showlargerImage);
             this.$showBigImage = this.$box.querySelector('.largerImg');
             // 获取放大图片盒子里面的图片
             this.$bigImage = this.$showBigImage.firstElementChild;
             // 获取小图片的盒子
             this.$ulbox = this.$box.querySelector('#imageMenu');
-            console.log(this.$ulbox);
+            // console.log(this.$ulbox);
             // 获取每一张图片的li集合
             this.$liAll = this.$ulbox.children;
 
@@ -298,8 +298,8 @@ var big = (function () {
 
                 // 先让放大镜显示,在获取宽度
                 // 计算边界
-                console.log(this.clientWidth);
-                console.log(_this.$filter.offsetWidth);
+                // console.log(this.clientWidth);
+                // console.log(_this.$filter.offsetWidth);
                 _this.maxX = this.clientWidth - _this.$filter.offsetWidth; //400-220;
                 _this.maxY = this.clientHeight - _this.$filter.offsetHeight;
             }
@@ -363,9 +363,9 @@ $(() => {
 
 
     var $name = document.querySelector('#productTitle h2');
-    console.log($name.title);
+    // console.log($name.title);
     var $id = document.querySelector('#productTitle span');
-    console.log($id.getAttribute('attr-id'));
+    // console.log($id.getAttribute('attr-id'));
     $id = $id.getAttribute('attr-id');
     var $btn = document.querySelector("#addToShoppingCar");
     var minelist = localStorage.getItem("minelist") || "[]"; //还有set和clear（不传清除所有）方法，
@@ -378,10 +378,10 @@ $(() => {
         }
     })
     $newnum.innerHTML = numTotal;
-    console.log($btn);
+    // console.log($btn);
     $btn.onclick = function () {
         var $num = document.querySelector("#selectedAmount");
-        console.dir($num.value);
+        // console.dir($num.value);
         var obj = {
             id: $id,
             name: $name.title,

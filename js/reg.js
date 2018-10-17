@@ -1,6 +1,6 @@
 var verification = (function () {
     var $from = document.querySelector('.form-box-reg');
-    // console.log($from.yanzhengma)
+    //  console.log($from)
     // console.log($from.phone)
     var $phoneYanzhengma = document.querySelector('.phone-yanzhengma');
     // console.log($phoneYanzhengma)
@@ -11,7 +11,7 @@ var verification = (function () {
     // 获取所有文本框
     var $inpALl = $from.querySelectorAll('input');
     // 表单验证规则
-    console.log($inpALl,$from);
+    // console.log($inpALl,$from);
     var checkInput = {
         loginMimaAgain: function (val) {
             var ele = document.querySelector('.inp3');
@@ -99,13 +99,13 @@ var verification = (function () {
                 
             }
             var $regbt=document.querySelector('.regbt');
-            console.log($regbt);
+            // console.log($regbt);
             $regbt.onclick=function(ev){
                 ev=ev||window.event;
                 var target=ev.target||ev.srcElement;
-                console.log(target.checked);
+                // console.log(target.checked);
                 if((target.nodeName=='INPUT'||target.nodeName=='LABEL') && target.checked){
-                    console.log(target.parentNode.nextElementSibling);
+                    // console.log(target.parentNode.nextElementSibling);
                     target.parentNode.nextElementSibling.style.background='#b52024';
                 }else{
                     target.parentNode.nextElementSibling.style.background='#9a9a9a';
@@ -139,12 +139,12 @@ var register = (function(){
             this.$ele = document.querySelector(ele);
             // 获取提交按钮
             this.$loginBtn = document.querySelector('.btn1');
-            console.log(this.$loginBtn);
+            // console.log(this.$loginBtn);
             
             this.$phone = document.querySelector('.inp1');
-            console.log(this.$phone);
+            // console.log(this.$phone);
             this.$passwordInp = document.querySelector('.inp2');
-            console.log(this.$passwordInp);
+            // console.log(this.$passwordInp);
             this.event();
         },
         event: function() {
@@ -199,7 +199,7 @@ var register = (function(){
                 console.log(this.$loginBtn.parentNode.firstElementChild.firstElementChild.checked);
                 if(this.$loginBtn.parentNode.firstElementChild.firstElementChild.checked){
                     // console.log($inpALl[$inpALl.length-2].value);
-                    location.href='vancl.html';
+                    location.href='index.html';
                 }
              } else {
                 
