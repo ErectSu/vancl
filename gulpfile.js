@@ -63,4 +63,4 @@ gulp.task('watch', function () {
 
 gulp.task('build', ['all', 'html', 'js', 'css', 'img'])
 // gulp.task('default', [ 'build','connect', 'watch'])
-gulp.task('default', [ 'build','connect'])
+gulp.task('default', [ 'connect', 'watch'，'build'])

@@ -130,7 +130,7 @@ if($exit){
 function toDB(num){
 	return num < 10 ? "0" + num : num;
 }
-var endTime=new Date("2018/10/18 11:00:00");
+var endTime=new Date("2018/10/19 21:30:00");
 var nowTime=new Date();
 var difTime=(endTime.getTime()-nowTime.getTime())/1000;
 var timer=setInterval(function(){
